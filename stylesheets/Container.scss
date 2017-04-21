@@ -1,0 +1,10 @@
+$bg-color: #e0e7ef;
+
+.appContainer {
+  background-color: $bg-color;
+  height: 100%;
+}
+.mainContainer {
+  background-color: $bg-color;
+  min-height: 80%;
+}
