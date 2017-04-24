@@ -5,9 +5,9 @@ import {Grid, Col, Row, FormGroup, ControlLabel, FormControl} from 'react-bootst
 class Footer extends Component {
   render() {
     return (
-      <div>
-        Footer
-      </div>
+        <div className="footerContainer" >
+          <span>by Moroz Vladimir</span>
+        </div>
     );
   }
 }
