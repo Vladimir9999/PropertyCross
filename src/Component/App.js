@@ -11,7 +11,6 @@ class App extends Component {
       let url = 'http://api.nestoria.co.uk/api?country=uk&pretty=1&action=search_listings&encoding=json&listing_type=buy&page=1&place_name=';
       url = url + location;
       fetch(url).then((response) => response.json()).then((responseJson) => {
-
         this.props.propertiesActions.addProp(responseJson.response.listings);
         //propertyStore.dispatch({type: 'ADD_PROP', payload: responseJson});
         //this.setState(properties, responseJson);

@@ -1,0 +1,16 @@
+.propertyTitle {
+  word-wrap: inherit;
+  overflow-wrap: inherit;
+}
+
+.propPrice {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-size: 15px;
+}
+
+.propType {
+  @extend .propPrice;
+}

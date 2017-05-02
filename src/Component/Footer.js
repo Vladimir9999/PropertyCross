@@ -6,7 +6,7 @@ class Footer extends Component {
   render() {
     return (
         <div className="footerContainer" >
-          <span>by Moroz Vladimir</span>
+          <span>ИП "Вырви глаз"</span>
         </div>
     );
   }

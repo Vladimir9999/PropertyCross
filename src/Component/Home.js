@@ -1,20 +1,18 @@
 import React, {Component} from 'react';
-import {Grid, Col, Row, FormGroup, ControlLabel, FormControl, Button} from 'react-bootstrap';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
+import Properties from './Properties';
 import propertiesActions from '../actions';
 
 import '../../stylesheets/Container.scss';
 
 class Home extends Component {
 
-  onClickAdd = (elem) => {
-    this.props.propertiesActions.addFave(elem);
-  };
 
-  onClickDelete = (id) => {
+
+/*  onClickDelete = (id) => {
     this.props.propertiesActions.delFave(id);
-  };
+  };*/
 
   render() {
     return (
@@ -23,28 +21,13 @@ class Home extends Component {
         <ul>
           {this.props.properties.map((elem, ind) => {
             return (
-              <li key={ind}>
-                Title: {elem.title}
-                <br />
-                <Button onClick={() => this.onClickAdd(elem)}>Add</Button>
+              <li key={ind} >
+                <Properties elem={elem} />
               </li>
             );
           })}
         </ul>
         <br />
-        <br />
-        <h1>Faves</h1>
-        <ul>
-          {this.props.faves.map((elem, ind) => {
-            return (
-              <li key={ind}>
-                Title: {elem.title}
-                <br />
-                <Button onClick={() => this.onClickDelete(ind)}>Delete</Button>
-              </li>
-            )
-          })}
-        </ul>
       </div>
     );
   }
