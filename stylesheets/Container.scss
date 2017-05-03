@@ -20,8 +20,9 @@ body {
 
 .ElemContainer {
   min-height: 250px;
-  padding-top: 3%;
   min-width: 80%;
+  padding-left: 3%;
+  padding-bottom: 3%;
   &:hover {
     -webkit-transform: scale(1.02);
     -moz-transform: scale(1.1);
@@ -31,29 +32,25 @@ body {
 }
 
 .propertyPicContainer {
-  display: inline-block;
   .propertyPic {
     width: 250px;
     height: 200px;
   }
 }
 
-.propertyDescrContainer {
-  display: inline-block;
-}
-
 .propPriceContainer {
-  margin: 5px;
+  margin: 5px 5px 10px 0;
+  padding: 5px;
+  background-color: #000000;
+  border-radius: 3px;
   display: inline-block;
-  min-height: 30px;
-  max-width: 80px;
-  background-color: #1D955D;
-  border-radius: 2px;
 }
 
-.propTypeContainer {
+.propInfoContainer {
   @extend .propPriceContainer;
-  background-color: #E62F0A;
+  background-color: #fff;
+  outline-offset: -1px;
+  outline: 1px solid #000000;
 }
 
 

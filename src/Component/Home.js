@@ -17,7 +17,7 @@ class Home extends Component {
   render() {
     return (
       <div className="homeContainer">
-        <h1>Properties</h1>
+        <h1>Bla bla bla</h1>
         <ul>
           {this.props.properties.map((elem, ind) => {
             return (

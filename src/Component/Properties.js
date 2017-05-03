@@ -18,22 +18,29 @@ class Properties extends Component {
     let {elem} = this.props;
     return (
       <div className="ElemContainer">
-        <div className="propertyDescrContainer">
           <Row>
             <h3>{elem.title}</h3>
           </Row>
           <Row>
-            <div className="propPriceContainer">
-              <span className="propPrice">{elem.price + '$'}</span>
-            </div>
-            <div className="propTypeContainer">
-              <span className="propType">{'type: ' + elem.property_type}</span>
-            </div>
+            <Col xs={6} md={4}>
+              <div className="propertyPicContainer">
+                <img src={elem.img_url} className="propertyPic" />
+              </div>
+            </Col>
+            <Col xs={6} md={4}>
+              <div className="propPriceContainer">
+                <span className="propPrice">{'$' + elem.price}</span>
+              </div>
+              <div className="propInfoContainer">
+                <span className="propInfo">{elem.bedroom_number}&middot;<b>Bed</b> {elem.bathroom_number}&middot;<b>Bath</b></span>
+              </div>
+              <Row >
+                <span>{elem.summary}</span>
+                <span className="clickLabel">click here</span>
+              </Row>
+            </Col>
           </Row>
-        </div >
-        <Col xs={6} md={4}><div className="propertyPicContainer">
-          <img src={elem.img_url} className="propertyPic" />
-        </div></Col>
+
       </div>
     );
 
