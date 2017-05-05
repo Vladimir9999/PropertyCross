@@ -19,7 +19,7 @@ class Home extends Component {
       <div className="homeContainer">
         <h1>Bla bla bla</h1>
         <ul>
-          {this.props.properties.map((elem, ind) => {
+          {this.props.properties.map((elem,ind) => {
             return (
               <li key={ind} >
                 <Properties elem={elem} />

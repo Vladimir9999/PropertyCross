@@ -24,6 +24,9 @@ class Header extends Component {
             <NavItem eventKey={1}>
               <Link to="/faves">Faves</Link>
             </NavItem>
+            <NavItem eventKey={2}>
+              <Link to="/form">Form</Link>
+            </NavItem>
           </Nav>
           <Navbar.Form pullRight>
             <FormGroup>
